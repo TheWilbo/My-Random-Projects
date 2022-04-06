@@ -1,7 +1,7 @@
 import java.util.*;
 class Quadratic{
     public static void main(String[] args){
-        System.out.println("Alpha 1.0.0");
+        System.out.println("Alpha 1.1.0");
         System.out.println("1,9,18,3,4,1,2,3,4,5,6,7");
         Scanner sc= new Scanner(System.in);    //System.in is a standard input stream  
         System.out.print("Enter A in the quadratic ");  
@@ -49,7 +49,7 @@ class Quadratic{
         //double h = 6;
         Scanner sn= new Scanner(System.in);    //System.in is a standard input stream  
         System.out.print("Enter a number of the Fibonacci sequence ");  
-        long Index= sn.nextInt();
+        long I= sn.nextInt();
         System.out.println();
         System.out.println("Quadratic: "+calc(a,b,c,true));
         System.out.println("Quadratic: "+calc(a,b,c,false));
@@ -58,7 +58,7 @@ class Quadratic{
         System.out.println("Sum of cubes:("+u+"^3)+("+v+"^3)=("+u+"+"+v+")(("+u+"^2)-"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Difference of cubes:("+u+"^3)-("+v+"^3)=("+u+"-"+v+")(("+u+"^2)+"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Radius of the circle: "+circle(x,y,k,h));
-        System.out.println("Fibonacci"fib(Index));
+        System.out.println("Fibonacci: "+fib(I));
     }
     public static double calc(double a, double b, double c,boolean runPositive){
         double returnStatement;
@@ -97,7 +97,7 @@ class Quadratic{
           f=s;
           s=t;
           //System.out.println(num+":"+t);
-          return t;
         }
+        return t;
     }
 }
