@@ -14,10 +14,13 @@ class Quadratic{
         double c= se.nextInt();
         //double c = 18;
         Scanner sf= new Scanner(System.in);    //System.in is a standard input stream  
-        System.out.print("Enter B in the quadratic ");  
+        System.out.print("Enter A side of a right triangle ");  
         double first= sf.nextInt();
         //double first = 3;
-        double second = 4;
+        Scanner sg= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter B in the quadratic ");  
+        double second= sg.nextInt();
+        //double second = 4;
         double u = 1;
         double v = 2;
         double x = 3;
