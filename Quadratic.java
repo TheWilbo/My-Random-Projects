@@ -9,8 +9,8 @@ class Quadratic{
         System.out.println("Quadratic:"+calc(a,b,c,false));
         System.out.println("Pythag:"+pythag(first,second,true));
         System.out.println(pythag(first,second,false));
-        System.out.println("Sum of cubes:("+a+"^3)+("+b+"^3)=("+a+"+"+b+")("+a+"^2-"+a+b+"+"+b+"^2)");
-        System.out.println("Difference of cubes:("+a+"^3)-("+b+"^3)=("+a+"-"+b+")("+a+"^2+"+a+b+"+"+b+"^2)");
+        System.out.println("Sum of cubes:("+a+"^3)+("+b+"^3)=("+a+"+"+b+")(("+a+"^2)-"+a+"*"+b+"+("+b+"^2))");
+        System.out.println("Difference of cubes:("+a+"^3)-("+b+"^3)=("+a+"-"+b+")(("+a+"^2)+"+a+"*"+b+"+("+b+"^2))");
     }
     public static double calc(double a, double b, double c,boolean runPositive){
         double returnStatement;
