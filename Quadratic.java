@@ -14,19 +14,37 @@ class Quadratic{
         double c= se.nextInt();
         //double c = 18;
         Scanner sf= new Scanner(System.in);    //System.in is a standard input stream  
-        System.out.print("Enter A side of a right triangle ");  
+        System.out.print("Enter a side of a right triangle ");  
         double first= sf.nextInt();
         //double first = 3;
         Scanner sg= new Scanner(System.in);    //System.in is a standard input stream  
-        System.out.print("Enter B in the quadratic ");  
+        System.out.print("Enter another side of a right triangle ");  
         double second= sg.nextInt();
         //double second = 4;
-        double u = 1;
-        double v = 2;
-        double x = 3;
-        double y = 4;
-        double k = 5;
-        double h = 6;
+        Scanner sh= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter u of the sum/difference of cubes eqt.");  
+        double u= sh.nextInt();
+        //double u = 1;
+        Scanner si= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter v of the sum/difference of cubes eqt.");  
+        double v= si.nextInt();
+        //double v = 2;
+        Scanner sj= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter x of the circle");  
+        double x= sj.nextInt();
+        //double x = 3;
+        Scanner sk= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter y of the sum/difference of cubes eqt.");  
+        double y= sk.nextInt();
+        //double y = 4;
+        Scanner sl= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter k of the sum/difference of cubes eqt.");  
+        double k= sl.nextInt();
+        //double k = 5;
+        Scanner sm= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter h of the sum/difference of cubes eqt.");  
+        double h= sm.nextInt();
+        //double h = 6;
         System.out.println();
         System.out.println("Quadratic: "+calc(a,b,c,true));
         System.out.println("Quadratic: "+calc(a,b,c,false));
