@@ -1,6 +1,8 @@
 import java.util.*;
 class Quadratic{
     public static void main(String[] args){
+        System.out.println("Alpha 1.0.0");
+        System.out.println("1,9,18,3,4,1,2,3,4,5,6");
         Scanner sc= new Scanner(System.in);    //System.in is a standard input stream  
         System.out.print("Enter A in the quadratic ");  
         double a= sc.nextInt();
@@ -48,8 +50,8 @@ class Quadratic{
         System.out.println();
         System.out.println("Quadratic: "+calc(a,b,c,true));
         System.out.println("Quadratic: "+calc(a,b,c,false));
-        System.out.println("Pythag: "+pythag(first,second,true));
-        System.out.println(pythag(first,second,false));
+        System.out.println("Hypotnuse: "+pythag(first,second,true));
+        System.out.println("Side B: "+pythag(first,second,false));
         System.out.println("Sum of cubes:("+u+"^3)+("+v+"^3)=("+u+"+"+v+")(("+u+"^2)-"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Difference of cubes:("+u+"^3)-("+v+"^3)=("+u+"-"+v+")(("+u+"^2)+"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Radius of the circle: "+circle(x,y,k,h));
@@ -67,9 +69,9 @@ class Quadratic{
           }
       return returnStatement;
     }
-    public static double pythag(double first, double second, boolean solveForHypotnose){
+    public static double pythag(double first, double second, boolean solveForHypotnuse){
       double returnStatement;
-      if (solveForHypotnose){
+      if (solveForHypotnuse){
         returnStatement = Math.sqrt(Math.pow(first,2) + Math.pow(second,2));
       } else {
         returnStatement = Math.sqrt(Math.pow(first,2) - Math.pow(second,2));
