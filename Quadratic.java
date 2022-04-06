@@ -1,9 +1,22 @@
+import java.util.*;
 class Quadratic{
     public static void main(String[] args){
-        double a = 1;
-        double b = 9;
-        double c = 18;
-        double first = 3;
+        Scanner sc= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter A in the quadratic ");  
+        double a= sc.nextInt();
+        //double a = 1;
+        Scanner sd= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter B in the quadratic ");  
+        double b= sd.nextInt();
+        //double b = 9;
+        Scanner se= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter C in the quadratic ");  
+        double c= se.nextInt();
+        //double c = 18;
+        Scanner sf= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.print("Enter B in the quadratic ");  
+        double first= sf.nextInt();
+        //double first = 3;
         double second = 4;
         double u = 1;
         double v = 2;
@@ -11,6 +24,7 @@ class Quadratic{
         double y = 4;
         double k = 5;
         double h = 6;
+        System.out.println();
         System.out.println("Quadratic: "+calc(a,b,c,true));
         System.out.println("Quadratic: "+calc(a,b,c,false));
         System.out.println("Pythag: "+pythag(first,second,true));
