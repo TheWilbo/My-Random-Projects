@@ -36,15 +36,15 @@ class Quadratic{
         double x= sj.nextInt();
         //double x = 3;
         Scanner sk= new Scanner(System.in);    //System.in is a standard input stream  
-        System.out.print("Enter y of the sum/difference of cubes eqt.");  
+        System.out.print("Enter y of the circle");  
         double y= sk.nextInt();
         //double y = 4;
         Scanner sl= new Scanner(System.in);    //System.in is a standard input stream  
-        System.out.print("Enter k of the sum/difference of cubes eqt.");  
+        System.out.print("Enter k of the circle");  
         double k= sl.nextInt();
         //double k = 5;
         Scanner sm= new Scanner(System.in);    //System.in is a standard input stream  
-        System.out.print("Enter h of the sum/difference of cubes eqt.");  
+        System.out.print("Enter h of the circle");  
         double h= sm.nextInt();
         //double h = 6;
         Scanner sn= new Scanner(System.in);    //System.in is a standard input stream  
