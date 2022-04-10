@@ -1,7 +1,7 @@
 import java.util.*;
 class Quadratic{
     public static void main(String[] args){
-        System.out.println("Alpha 1.1.2");
+        System.out.println("Alpha 1.1.5");
         System.out.println("1,9,18,3,4,1,2,3,4,5,6,7"); 
         System.out.print("Enter A in the quadratic ");  
         double a= scanner(); 
