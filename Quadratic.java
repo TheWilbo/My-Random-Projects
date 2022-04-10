@@ -2,54 +2,31 @@ import java.util.*;
 class Quadratic{
     public static void main(String[] args){
         System.out.println("Alpha 1.1.2");
-        System.out.println("1,9,18,3,4,1,2,3,4,5,6,7");
-        Scanner sc= new Scanner(System.in);    //System.in is a standard input stream  
+        System.out.println("1,9,18,3,4,1,2,3,4,5,6,7"); 
         System.out.print("Enter A in the quadratic ");  
-        double a= sc.nextInt();
-        //double a = 1;
-        Scanner sd= new Scanner(System.in);    //System.in is a standard input stream  
+        double a= scanner(); 
         System.out.print("Enter B in the quadratic ");  
-        double b= sd.nextInt();
-        //double b = 9;
-        Scanner se= new Scanner(System.in);    //System.in is a standard input stream  
+        double b= scanner();  
         System.out.print("Enter C in the quadratic ");  
-        double c= se.nextInt();
-        //double c = 18;
-        Scanner sf= new Scanner(System.in);    //System.in is a standard input stream  
+        double c= scanner(); 
         System.out.print("Enter a side of a right triangle ");  
-        double first= sf.nextInt();
-        //double first = 3;
-        Scanner sg= new Scanner(System.in);    //System.in is a standard input stream  
+        double first= scanner(); 
         System.out.print("Enter another side of a right triangle ");  
-        double second= sg.nextInt();
-        //double second = 4;
-        Scanner sh= new Scanner(System.in);    //System.in is a standard input stream  
+        double second= scanner(); 
         System.out.print("Enter u of the sum/difference of cubes eqt.");  
-        double u= sh.nextInt();
-        //double u = 1;
-        Scanner si= new Scanner(System.in);    //System.in is a standard input stream  
+        double u= scanner();  
         System.out.print("Enter v of the sum/difference of cubes eqt.");  
-        double v= si.nextInt();
-        //double v = 2;
-        Scanner sj= new Scanner(System.in);    //System.in is a standard input stream  
+        double v= scanner();  
         System.out.print("Enter x of the circle");  
-        double x= sj.nextInt();
-        //double x = 3;
-        Scanner sk= new Scanner(System.in);    //System.in is a standard input stream  
+        double x= scanner();  
         System.out.print("Enter y of the circle");  
-        double y= sk.nextInt();
-        //double y = 4;
-        Scanner sl= new Scanner(System.in);    //System.in is a standard input stream  
+        double y= scanner(); 
         System.out.print("Enter k of the circle");  
-        double k= sl.nextInt();
-        //double k = 5;
-        Scanner sm= new Scanner(System.in);    //System.in is a standard input stream  
+        double k= scanner(); 
         System.out.print("Enter h of the circle");  
-        double h= sm.nextInt();
-        //double h = 6;
-        Scanner sn= new Scanner(System.in);    //System.in is a standard input stream  
+        double h= scanner();
         System.out.print("Enter a number of the Fibonacci sequence ");  
-        long I= sn.nextInt();
+        long I= (long) scanner();
         System.out.println();
         System.out.println("Quadratic: "+calc(a,b,c,true));
         System.out.println("Quadratic: "+calc(a,b,c,false));
@@ -99,5 +76,9 @@ class Quadratic{
           //System.out.println(num+":"+t);
         }
         return t;
+    }
+    public static double scanner(){
+      Scanner sc= new Scanner(System.in);    //System.in is a standard input stream 
+      return sc.nextInt();
     }
 }
