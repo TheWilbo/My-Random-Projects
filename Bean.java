@@ -4,6 +4,7 @@ public class Bean{
         String word = "Bean", ligma = "Ligma", ballz = "Balls", LigmaBallz = ligma + ballz; 
         int whole = 9/2, remainder = 9%2, both = whole |= remainder, stringCount = 0;
         //System.out.println(word + pi + LigmaBallz + stringCount + txt.length());
-        System.out.println(both);
+        while (true){
+        System.out.println("Colter is gay");}
         }
 }
