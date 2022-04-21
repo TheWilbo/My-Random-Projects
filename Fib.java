@@ -4,15 +4,16 @@ public class Fib{
         System.out.print("Fibonacci number? ");  
         Scanner sc= new Scanner(System.in);
         long i = sc.nextInt();
-        System.out.println(fib(i));
+        long number = fib(i);
+        System.out.println(number);
         }
-        public static long fib(long num){
-            if (num==0){
-                return 0;
-            } else if (num==1){
-                return 1;
-            } else {
-                return fib(num-1)+fib(num-2);
-            }
+    public static long fib(long num){
+        if (num==0){
+            return 0;
+        } else if (num==1){
+            return 1;
+        } else {
+            return fib(num-1)+fib(num-2);
         }
+    }
 }
