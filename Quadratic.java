@@ -37,7 +37,7 @@ class Quadratic{
         System.out.println("Radius of the circle: "+circle(x,y,k,h));
         System.out.println("Fibonacci: "+fib(I));
     }
-    public static double calc(double a, double b, double c,boolean runPositive){
+    public static double calc(double a, double b, double c,boolean runPositive){ //split methods into different files went you learn more about java
         double returnStatement;
         double x;
         double backHalfOfQuadraticFormula = Math.sqrt(Math.pow(b,2)-4*a*c);
@@ -64,18 +64,16 @@ class Quadratic{
       return r;
     }
     public static long fib(long I){
-        long f = 1;
-        long s = 0;
-        long t = 0;
-        long num = 0;
-        while (num < I){ //4660046610375530310L
-          ++num;
-          t=f+s;
-          f=s;
-          s=t;
+        long firstFib = 1;
+        long secondFib = 0;
+        long thirdFib = 0;
+        for (long loopCount = 0; loopCount < I; ++loopCount){ //4660046610375530310L
+          thirdFib=firstFib+secondFib;
+          firstFib=secondFib;
+          secondFib=thirdFib;
           //System.out.println(num+":"+t);
         }
-        return t;
+        return thirdFib;
     }
     public static double scanner(){
       Scanner sc= new Scanner(System.in);    //System.in is a standard input stream 
