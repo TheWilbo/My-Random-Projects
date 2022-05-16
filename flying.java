@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class flying{ //This was to test Github Copilot
     public static void main(String[] args){
         System.out.println("Fibonacci number? ");
