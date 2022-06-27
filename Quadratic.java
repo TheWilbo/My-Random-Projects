@@ -30,8 +30,10 @@ class Quadratic{
         System.out.println();
         System.out.println("Quadratic: "+calc(a,b,c,true));
         System.out.println("Quadratic: "+calc(a,b,c,false));
-        System.out.println("Hypotnuse: "+pythag(first,second,true));
-        System.out.println("Side B: "+pythag(first,second,false));
+        //System.out.println("Hypotnuse: "+pythag(first,second,true));
+        System.out.println("Hypotnose: " +Pythag.pythag(first,second,true));
+        //System.out.println("Side B: "+pythag(first,second,false));
+        System.out.println("Side B: " +Pythag.pythag(first,second,false));
         System.out.println("Sum of cubes:("+u+"^3)+("+v+"^3)=("+u+"+"+v+")(("+u+"^2)-"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Difference of cubes:("+u+"^3)-("+v+"^3)=("+u+"-"+v+")(("+u+"^2)+"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Radius of the circle: "+circle(x,y,k,h));
@@ -50,7 +52,7 @@ class Quadratic{
           }
       return returnStatement;
     }
-    public static double pythag(double first, double second, boolean solveForHypotnuse){
+    /*public static double pythag(double first, double second, boolean solveForHypotnuse){
       double returnStatement;
       if (solveForHypotnuse){
         returnStatement = Math.sqrt(Math.pow(first,2) + Math.pow(second,2));
@@ -58,7 +60,7 @@ class Quadratic{
         returnStatement = Math.sqrt(Math.pow(first,2) - Math.pow(second,2));
       }
       return returnStatement;
-    }
+    }*/
     public static double circle(double x, double y, double k, double h){
       double r = Math.sqrt((Math.pow(x-h,2))+(Math.pow(y-k,2)));
       return r;
