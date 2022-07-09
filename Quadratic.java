@@ -36,7 +36,7 @@ class Quadratic{
         System.out.println("Side B: " +Pythag.pythag(first,second,false));
         System.out.println("Sum of cubes:("+u+"^3)+("+v+"^3)=("+u+"+"+v+")(("+u+"^2)-"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Difference of cubes:("+u+"^3)-("+v+"^3)=("+u+"-"+v+")(("+u+"^2)+"+u+"*"+v+"+("+v+"^2))");
-        System.out.println("Radius of the circle: "+circle(x,y,k,h));
+        System.out.println("Radius of the circle: "+Circle.circle(x,y,k,h));
         System.out.println("Fibonacci: "+fib(I));
     }
     public static double calc(double a, double b, double c,boolean runPositive){ //split methods into different files went you learn more about java
@@ -61,10 +61,10 @@ class Quadratic{
       }
       return returnStatement;
     }*/
-    public static double circle(double x, double y, double k, double h){
+    /*public static double circle(double x, double y, double k, double h){
       double r = Math.sqrt((Math.pow(x-h,2))+(Math.pow(y-k,2)));
       return r;
-    }
+    }*/
     public static long fib(long I){
         long firstFib = 1;
         long secondFib = 0;
