@@ -30,8 +30,8 @@ class Quadratic{
         System.out.println();
         System.out.println("Quadratic: "+calc(a,b,c,true));
         System.out.println("Quadratic: "+calc(a,b,c,false));
-        //System.out.println("Hypotnuse: "+pythag(first,second,true));
-        System.out.println("Hypotnose: " +Pythag.pythag(first,second,true));
+        //System.out.println("Hypotenuse: "+pythag(first,second,true));
+        System.out.println("Hypotenuse: " +Pythag.pythag(first,second,true));
         //System.out.println("Side B: "+pythag(first,second,false));
         System.out.println("Side B: " +Pythag.pythag(first,second,false));
         System.out.println("Sum of cubes:("+u+"^3)+("+v+"^3)=("+u+"+"+v+")(("+u+"^2)-"+u+"*"+v+"+("+v+"^2))");
@@ -52,9 +52,9 @@ class Quadratic{
           }
       return returnStatement;
     }
-    /*public static double pythag(double first, double second, boolean solveForHypotnuse){
+    /*public static double pythag(double first, double second, boolean solveForHypotenuse){
       double returnStatement;
-      if (solveForHypotnuse){
+      if (solveForHypotenuse){
         returnStatement = Math.sqrt(Math.pow(first,2) + Math.pow(second,2));
       } else {
         returnStatement = Math.sqrt(Math.pow(first,2) - Math.pow(second,2));
