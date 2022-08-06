@@ -28,8 +28,8 @@ class Quadratic{
         System.out.print("Enter a number of the Fibonacci sequence ");  
         long I= (long) scanner();
         System.out.println();
-        System.out.println("Quadratic: "+calc(a,b,c,true));
-        System.out.println("Quadratic: "+calc(a,b,c,false));
+        System.out.println("Quadratic: "+NewQuadratic.quad(a,b,c,false));
+        System.out.println("Quadratic: "+NewQuadratic.quad(a,b,c,true));
         //System.out.println("Hypotenuse: "+pythag(first,second,true));
         System.out.println("Hypotenuse: " +Pythag.pythag(first,second,true));
         //System.out.println("Side B: "+pythag(first,second,false));

@@ -13,19 +13,19 @@ public class Map {
         //panel.setLayout(new GridLayout(0,1));
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("ooooo");
+        frame.setTitle("with eggs");
         frame.pack();
         frame.setVisible(true);
         try {
    
-        URI uri= new URI("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+            URI uri= new URI("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         
-        java.awt.Desktop.getDesktop().browse(uri);
-         System.out.println("Web page opened in browser");
+            java.awt.Desktop.getDesktop().browse(uri);
+            System.out.println("Web page opened in browser");
       
        } catch (Exception e) {
         
-        e.printStackTrace();
+            e.printStackTrace();
        }
     }
 }
