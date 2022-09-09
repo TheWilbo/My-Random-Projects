@@ -1,44 +1,63 @@
 import java.util.*;
 class Quadratic{
     public static void main(String[] args){
-        //Scanner test= new Scanner(System.in); 
-        //boolean doTest=test.nextBoolean();
+      System.out.println("You would like to do a test run. true/false");
+      double a,b,c,first,second,u,v,x,y,k,h;
+      long I;
+      Scanner test= new Scanner(System.in); 
+      boolean doTest=test.nextBoolean();
+      if (!doTest){
         System.out.println("1,9,18,3,4,1,2,3,4,5,6,7"); 
         System.out.print("Enter A in the quadratic ");  
-        double a= scanner(false); 
+        a= scanner(false); 
         System.out.print("Enter B in the quadratic ");  
-        double b= scanner(false);  
+        b= scanner(false);  
         System.out.print("Enter C in the quadratic ");  
-        double c= scanner(false); 
+        c= scanner(false); 
         System.out.print("Enter a side of a right triangle ");  
-        double first= scanner(false); 
+        first= scanner(false); 
         System.out.print("Enter another side of a right triangle ");  
-        double second= scanner(false); 
+        second= scanner(false); 
         System.out.print("Enter u of the sum/difference of cubes eqt.");  
-        double u= scanner(false);  
+        u= scanner(false);  
         System.out.print("Enter v of the sum/difference of cubes eqt.");  
-        double v= scanner(false);  
+        v= scanner(false);  
         System.out.print("Enter x of the circle");  
-        double x= scanner(false);  
+        x= scanner(false);  
         System.out.print("Enter y of the circle");  
-        double y= scanner(false); 
+        y= scanner(false); 
         System.out.print("Enter k of the circle");  
-        double k= scanner(false); 
+        k= scanner(false); 
         System.out.print("Enter h of the circle");  
-        double h= scanner(false);
+        h= scanner(false);
         System.out.print("Enter a number of the Fibonacci sequence ");  
-        long I= (long) scanner(true);
-        System.out.println();
-        System.out.println("Quadratic: "+NewQuadratic.quad(a,b,c,false));
-        System.out.println("Quadratic: "+NewQuadratic.quad(a,b,c,true));
-        //System.out.println("Hypotenuse: "+pythag(first,second,true));
-        System.out.println("Hypotenuse: " +Pythag.pythag(first,second,true));
-        //System.out.println("Side B: "+pythag(first,second,false));
-        System.out.println("Side B: " +Pythag.pythag(first,second,false));
-        System.out.println("Sum of cubes:("+u+"^3)+("+v+"^3)=("+u+"+"+v+")(("+u+"^2)-"+u+"*"+v+"+("+v+"^2))");
-        System.out.println("Difference of cubes:("+u+"^3)-("+v+"^3)=("+u+"-"+v+")(("+u+"^2)+"+u+"*"+v+"+("+v+"^2))");
-        System.out.println("Radius of the circle: "+Circle.circle(x,y,k,h));
-        System.out.println("Fibonacci: "+QuickFib.fib(I));
+        I= (long) scanner(true);
+      }else{
+        test.close();
+        a=1;
+        b=9;
+        c=18;
+        first=3;
+        second=4;
+        u=1;
+        v=2;
+        x=3;
+        y=4;
+        k=5;
+        h=6;
+        I=7;
+      }
+      System.out.println();
+      System.out.println("Quadratic: "+NewQuadratic.quad(a,b,c,false));
+      System.out.println("Quadratic: "+NewQuadratic.quad(a,b,c,true));
+      //System.out.println("Hypotenuse: "+pythag(first,second,true));
+      System.out.println("Hypotenuse: " +Pythag.pythag(first,second,true));
+      //System.out.println("Side B: "+pythag(first,second,false));
+      System.out.println("Side B: " +Pythag.pythag(first,second,false));
+      System.out.println("Sum of cubes:("+u+"^3)+("+v+"^3)=("+u+"+"+v+")(("+u+"^2)-"+u+"*"+v+"+("+v+"^2))");
+      System.out.println("Difference of cubes:("+u+"^3)-("+v+"^3)=("+u+"-"+v+")(("+u+"^2)+"+u+"*"+v+"+("+v+"^2))");
+      System.out.println("Radius of the circle: "+Circle.circle(x,y,k,h));
+      System.out.println("Fibonacci: "+QuickFib.fib(I));
     }
     /*public static double calc(double a, double b, double c,boolean runPositive){ //split methods into different files went you learn more about java
         double returnStatement;
