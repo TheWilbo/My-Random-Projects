@@ -1,32 +1,31 @@
 import java.util.*;
 class Quadratic{
     public static void main(String[] args){
-        System.out.println("Alpha 1.1.5");
         System.out.println("1,9,18,3,4,1,2,3,4,5,6,7"); 
         System.out.print("Enter A in the quadratic ");  
-        double a= scanner(); 
+        double a= scanner(false); 
         System.out.print("Enter B in the quadratic ");  
-        double b= scanner();  
+        double b= scanner(false);  
         System.out.print("Enter C in the quadratic ");  
-        double c= scanner(); 
+        double c= scanner(false); 
         System.out.print("Enter a side of a right triangle ");  
-        double first= scanner(); 
+        double first= scanner(false); 
         System.out.print("Enter another side of a right triangle ");  
-        double second= scanner(); 
+        double second= scanner(false); 
         System.out.print("Enter u of the sum/difference of cubes eqt.");  
-        double u= scanner();  
+        double u= scanner(false);  
         System.out.print("Enter v of the sum/difference of cubes eqt.");  
-        double v= scanner();  
+        double v= scanner(false);  
         System.out.print("Enter x of the circle");  
-        double x= scanner();  
+        double x= scanner(false);  
         System.out.print("Enter y of the circle");  
-        double y= scanner(); 
+        double y= scanner(false); 
         System.out.print("Enter k of the circle");  
-        double k= scanner(); 
+        double k= scanner(false); 
         System.out.print("Enter h of the circle");  
-        double h= scanner();
+        double h= scanner(false);
         System.out.print("Enter a number of the Fibonacci sequence ");  
-        long I= (long) scanner();
+        long I= (long) scanner(true);
         System.out.println();
         System.out.println("Quadratic: "+NewQuadratic.quad(a,b,c,false));
         System.out.println("Quadratic: "+NewQuadratic.quad(a,b,c,true));
@@ -39,7 +38,7 @@ class Quadratic{
         System.out.println("Radius of the circle: "+Circle.circle(x,y,k,h));
         System.out.println("Fibonacci: "+fib(I));
     }
-    public static double calc(double a, double b, double c,boolean runPositive){ //split methods into different files went you learn more about java
+    /*public static double calc(double a, double b, double c,boolean runPositive){ //split methods into different files went you learn more about java
         double returnStatement;
         double x;
         double backHalfOfQuadraticFormula = Math.sqrt(Math.pow(b,2)-4*a*c);
@@ -51,7 +50,7 @@ class Quadratic{
           returnStatement = x;
           }
       return returnStatement;
-    }
+    }*/
     /*public static double pythag(double first, double second, boolean solveForHypotenuse){
       double returnStatement;
       if (solveForHypotenuse){
@@ -66,9 +65,9 @@ class Quadratic{
       return r;
     }*/
     public static long fib(long I){
-        long firstFib = 1;
-        long secondFib = 0;
-        long thirdFib = 0;
+        long firstFib = 1, secondFib = 0, thirdFib = 0;
+        //long secondFib = 0;
+        //long thirdFib = 0;
         for (long loopCount = 0; loopCount < I; ++loopCount){ //4660046610375530310L
           thirdFib=firstFib+secondFib;
           firstFib=secondFib;
@@ -77,8 +76,12 @@ class Quadratic{
         }
         return thirdFib;
     }
-    public static double scanner(){
+    public static double scanner(Boolean close){
       Scanner sc= new Scanner(System.in);    //System.in is a standard input stream 
-      return sc.nextInt();
+      double temp = sc.nextInt(); 
+      if (close == true) {
+        sc.close();
+      }
+      return temp;
     }
 }
