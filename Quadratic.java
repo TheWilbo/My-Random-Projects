@@ -1,6 +1,8 @@
 import java.util.*;
 class Quadratic{
     public static void main(String[] args){
+        //Scanner test= new Scanner(System.in); 
+        //boolean doTest=test.nextBoolean();
         System.out.println("1,9,18,3,4,1,2,3,4,5,6,7"); 
         System.out.print("Enter A in the quadratic ");  
         double a= scanner(false); 
@@ -36,7 +38,7 @@ class Quadratic{
         System.out.println("Sum of cubes:("+u+"^3)+("+v+"^3)=("+u+"+"+v+")(("+u+"^2)-"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Difference of cubes:("+u+"^3)-("+v+"^3)=("+u+"-"+v+")(("+u+"^2)+"+u+"*"+v+"+("+v+"^2))");
         System.out.println("Radius of the circle: "+Circle.circle(x,y,k,h));
-        System.out.println("Fibonacci: "+fib(I));
+        System.out.println("Fibonacci: "+QuickFib.fib(I));
     }
     /*public static double calc(double a, double b, double c,boolean runPositive){ //split methods into different files went you learn more about java
         double returnStatement;
@@ -64,7 +66,7 @@ class Quadratic{
       double r = Math.sqrt((Math.pow(x-h,2))+(Math.pow(y-k,2)));
       return r;
     }*/
-    public static long fib(long I){
+    /*public static long fib(long I){
         long firstFib = 1, secondFib = 0, thirdFib = 0;
         //long secondFib = 0;
         //long thirdFib = 0;
@@ -75,12 +77,13 @@ class Quadratic{
           //System.out.println(num+":"+t);
         }
         return thirdFib;
-    }
+    }*/
     public static double scanner(Boolean close){
       Scanner sc= new Scanner(System.in);    //System.in is a standard input stream 
       double temp = sc.nextInt(); 
-      if (close == true) {
+      if (close == true) { //To check if we are done with the scanner.
         sc.close();
+        temp = (long) sc.nextInt(); //To hopefully prevent floating point inaccuracies.
       }
       return temp;
     }

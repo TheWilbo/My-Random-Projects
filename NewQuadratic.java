@@ -1,6 +1,6 @@
 public class NewQuadratic {
     public static double quad(double a, double b, double c, boolean ran){
-        double x = 999999999999999999999999999999999999999999999999999999999.9;
+        double x = 0; //To init variable.
         if (ran){
             x = (-1*b-Math.sqrt(Math.pow(b,2)-4*a*c))/(2*a);
         }
@@ -8,7 +8,7 @@ public class NewQuadratic {
             x = (-1*b+Math.sqrt(Math.pow(b,2)-4*a*c))/(2*a);
         }
         
-        return x;
+        return x; //Without "= 0" in line 3, this line complains.
     }
     
 }
