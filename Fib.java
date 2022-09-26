@@ -6,6 +6,7 @@ public class Fib{
         long i = sc.nextInt();
         long number = fib(i);
         System.out.println(number);
+        sc.close();
     }
     public static long fib(long num){
         if (num==0){

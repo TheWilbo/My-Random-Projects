@@ -4,7 +4,8 @@ class flying{ //This was to test Github Copilot
         System.out.println("Fibonacci number? ");
         Scanner sc= new Scanner(System.in);
         long i = sc.nextInt();
-        Fib myObj = new Fib();
-        System.out.println(myObj.fib(i));
+        //Fib myObj = new Fib();
+        System.out.println(Fib.fib(i));
+        sc.close();
     }
 }
