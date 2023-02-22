@@ -7,7 +7,7 @@ class Quadratic{
       Scanner test= new Scanner(System.in); 
       boolean doTest=test.nextBoolean();
       if (!doTest){
-        System.out.println("1,9,18,3,4,1,2,3,4,5,6,7"); 
+      System.out.println("1,9,18,3,4,1,2,3,4,5,6,7"); 
         System.out.print("Enter A in the quadratic ");  
         a= scanner(false); 
         System.out.print("Enter B in the quadratic ");  
